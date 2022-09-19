@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
     <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+    <link href="contact-form.css" rel="stylesheet">
      <!-- App- wise CSS-->
 </head>
 <body>
@@ -306,25 +307,42 @@
                                 </ul>
 
                             <section id="email">
-                                <!-- modify this form HTML and place wherever you want your form -->
-                                <form action="https://formspree.io/f/xjvzyjpe" method="POST">
-                                  <label>
-                                    Your email:
-                                    <input type="email" name="email">
-                                  </label>
-                                  <label>
-                                    Your message:
-                                    <textarea name="message"></textarea>
-                                  </label>
-                                  <!-- your other form fields go here -->
-                                  <button type="submit">Send</button>
+                                
+                              <div class="fcf-body">
+
+                                <div id="fcf-form">
+                                <h3 class="fcf-h3">Contact me</h3>
+
+                                <form id="fcf-form-id" class="fcf-form-class" action="https://formspree.io/f/xjvzyjpe" method="POST">
+
+                                 
+
+                                    <div class="fcf-form-group">
+                                        <label for="Email" class="fcf-label">Your email address</label>
+                                        <div class="fcf-input-group">
+                                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="fcf-form-group">
+                                        <label for="Message" class="fcf-label">Your message</label>
+                                        <div class="fcf-input-group">
+                                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="fcf-form-group">
+                                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                                    </div>
+
+                      
+
                                 </form>
+                                </div>
+
+                            </div>
+                               
                             </section>
-
-                          
-
-
-                            
                            
                             <footer>
                                 <p class="tm-copyright-p"> &copy; 2022  Joy Krishan Das (Updated on: 11 Sep 2022 11:25:45 Eastern Time)</p>
